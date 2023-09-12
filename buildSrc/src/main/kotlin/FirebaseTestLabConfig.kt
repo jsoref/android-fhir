@@ -79,7 +79,7 @@ fun Project.configureFirebaseTestLabForMicroBenchmark() {
 }
 
 private fun FlankGradleExtension.commonConfigurationForFirebaseTestLab(project: Project) {
-  projectId.set("android-fhir-instrumeted-tests")
+  projectId.set("android-fhir-instrumented-tests")
   debugApk.set(
     project.provider {
       "${project.rootDir}/demo/build/outputs/apk/androidTest/debug/demo-debug-androidTest.apk"
